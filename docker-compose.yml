@@ -1,0 +1,9 @@
+version: '3.8'
+services:
+  database:
+    image: mysql:8.0
+    environment:
+      # INSECURE: Root password left blank in plain configuration file!
+      MYSQL_ALLOW_EMPTY_PASSWORD: "yes"
+    ports:
+      - "3306:3306"
